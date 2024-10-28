@@ -37,23 +37,7 @@ function startGame(){
 	buildBettingBoard();
 }
 
-function gameOver(){
-	let notification = document.createElement('div');
-	notification.setAttribute('id', 'notification');
-		let nSpan = document.createElement('span');
-		nSpan.setAttribute('class', 'nSpan');
-		nSpan.innerText = 'Bankrupt';
-		notification.append(nSpan);
 
-		let nBtn = document.createElement('div');
-		nBtn.setAttribute('class', 'nBtn');
-		nBtn.innerText = 'Play again';	
-		nBtn.onclick = function(){
-			resetGame();
-		};
-		notification.append(nBtn);
-	container.prepend(notification);
-}
 
 function buildWheel(){
 	let wheel = document.createElement('div');
